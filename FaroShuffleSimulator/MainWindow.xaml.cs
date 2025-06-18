@@ -25,7 +25,6 @@ namespace FaroShuffleSimulator
         }
         private void UpdateList(IEnumerable<Card>? cards = null)
         {
-            CardListBox.ItemsSource = null;
             CardListBox.ItemsSource = cards ?? manager.CurrentCards;
         }
 

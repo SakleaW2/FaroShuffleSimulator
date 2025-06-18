@@ -13,6 +13,7 @@
         string[] suits = { "clubs", "diamonds", "hearts", "spades" };
         string[] ranks = { "2", "3", "4", "5", "6", "7", "8", "9", "10", "jack", "queen", "king", "ace" };
         int key = 1;
+        
 
         originalCards = (from suit in suits
                          from rank in ranks
@@ -22,7 +23,6 @@
                              Name = $"{rank} of {suit}",
                              ImagePath = $"/Images/{rank}_of_{suit}.png"
                          }).ToList();
-
         CurrentCards = new List<Card>(originalCards);
     }
 
